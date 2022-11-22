@@ -46,6 +46,7 @@
             </li>
           </ul>
         </nav>
+
         <ul class="header-contact-list list">
           <li class="header-contakt-item">
             <a
@@ -69,17 +70,28 @@
         </ul>
       </div>
     </header>
+
     <!--Герой-->
     <main>
       <section class="hero overlay">
         <div class="container">
-          <h1 class="hero-title">
-            Ефективні рішення для<br />
-            вашого бізнесу
-          </h1>
-          <button class="hero-button button" type="button">
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <button class="hero-button button" data-modal-open type="button">
             Замовити послугу
           </button>
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button class="data-modal-close" type="button" data-modal-close>
+              <svg class="close-icon">
+                <use
+                  href="./images/icons.svg#icon-close"
+                  width="30"
+                  height="30"
+                ></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -155,35 +167,52 @@
           </ul>
         </div>
       </section>
+
       <!--Чим ми займаємося-->
       <section class="work-section">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="work-list list">
             <li class="work-item">
-              <img
-                src="./images/img1.jpg"
-                alt="Чоловік працює на планшеті за допомогою клавіатури"
-                width="370"
-              />
+              <div class="addition-thumb">
+                <img
+                  src="./images/img1.jpg"
+                  alt="Чоловік працює на планшеті за допомогою клавіатури"
+                  width="370"
+                />
+                <div class="addition-title">
+                  <h3 class="addition-text">Десктопні додатки</h3>
+                </div>
+              </div>
             </li>
             <li class="work-item">
-              <img
-                src="./images/img2.jpg"
-                alt="Жінка працює з ноутбуком та телефоном"
-                width="370"
-              />
+              <div class="addition-thumb">
+                <img
+                  src="./images/img2.jpg"
+                  alt="Жінка працює з ноутбуком та телефоном"
+                  width="370"
+                />
+                <div class="addition-title">
+                  <h3 class="addition-text">Мобільні додатки</h3>
+                </div>
+              </div>
             </li>
             <li class="work-item">
-              <img
-                src="./images/img3.jpg"
-                alt="Палітра кольорів на планшеті"
-                width="370"
-              />
+              <div class="addition-thumb">
+                <img
+                  src="./images/img3.jpg"
+                  alt="Палітра кольорів на планшеті"
+                  width="370"
+                />
+                <div class="addition-title">
+                  <h3 class="addition-text">Дизайнерські рішення</h3>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
       </section>
+
       <!--Наша команда-->
       <section class="team-section">
         <div class="container">
@@ -549,5 +578,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
